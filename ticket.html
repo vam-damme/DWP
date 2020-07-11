@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy Ticket DWP</title>
+	<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap-grid.css">
+    <style type="text/css">
+    @font-face {
+        font-family: "Anton";
+        src: url("resource/font/Anton.ttf");
+    }
+    </style>
+	<link rel="stylesheet" type="text/css" href="resource/css/home.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/ticket-nav.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/style-ticket.css">
+
+    <script src="resource/bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="resource/bootstrap/js/bootstrap.js"></script>
+    <script src="resource/bootstrap/js/popper.min.js"></script>
+    <!-- <script src="resource/js/home.js"></script> -->
+    <script src="resource/js/write.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script type="text/javascript" src="resource/js/jquery.min.js"></script>
+    <style type="text/css">
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+	.nav-item::after{content:'';display:block;width:0px;height:2px;background:#fec400;transition: 0.2s;}
+	.nav-item:hover::after{width:100%;}
+	.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+	.dropdown-item.active, .dropdown-item:active{color:#212529;}
+	.dropdown-item:focus, .dropdown-item:hover{background:#fec400;}
+	.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+    .btn:hover{
+        color: #fec400;
+    }
+    </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #343a40/*#355C7D*/;">
+        <a class="navbar-brand w3-animate-zoom" href="#">
+            <img style="width: 80px;" src="resource/img/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="button pulse nav-item">
+                    <a class="nav-link" href="index.html" >Home<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#line-up">Line Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#teaser">Teaser</a>
+                </li>
+                 <li class="nav-item active">
+                    <a class="nav-link" href="ticket.html">Buy Now</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Contact Us</a>
+                </li>
+                <li class="nav-link typewrite" style="color: white; position: relative; float: right;" data-period="2500" data-type='[ "DWP", "Djakarta Warehouse Project", "I Love to Develop." ]'>
+    			<span class="wrap"></span>
+  				</li>
+            </ul>
+        </div>
+    </nav>
+    <h1 style="font-size: 35pt; margin-top: 20px; color: #fec400">BUY TICKET</h1>
+
+    <div class="bangku container" style="background-color: white; width: 80%; margin: 0; text-align: center;display: inline-block; margin-top: 40px;" >
+        <img style="margin-top: 20px;" src="resource/img/seat.png">
+
+        <div class="row">
+            <h2 style="text-align: left;">Note:</h2><br>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 style="text-align: left;">Bronze  : 1.000.000</h2><br>
+            </div>
+            <div class="col">
+                <h2 style="text-align: left;">Gold    : 1.750.000</h2><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 style="text-align: left;">Silver  : 1.500.000</h2><br>
+            </div>
+            <div class="col">
+                <h2 style="text-align: left;">Diamond : 2.500.000</h2><br>
+            </div>
+            
+        </div>
+        <h1 style="font-size: 35pt; text-decoration: underline; margin-top: 20px; margin-bottom: 40px; color: black">RSVP</h1>
+        <h2 style="text-align: left; margin-bottom: 20px; margin-top: 20px;">Select Your Seat Type :</h2>
+        <div class="container" style="padding-bottom: 30px;">
+            <form onchange="calc()" onload="rupiah()" style="background-color: white; text-align: left;">
+                <div class="row">
+                    <div class="col" style="margin: 0;">
+                        <input id="myrad" type="radio" name="gender" value="Bronze" checked> Bronze
+                    </div>
+                    <div class="col" style="margin: 0;">
+                        <input id="myrad" type="radio" name="gender" value="Silver"> Silver
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="margin: 0;">
+                        <input id="myrad" type="radio" name="gender" value="Gold"> Gold
+                    </div>
+                    <div class="col" style="margin: 0;">
+                        <input id="myrad" type="radio" name="gender" value="Diamond"> Diamond
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            var rupiah = "Rp. 1.000.000";
+        </script>
+        <div>
+            <h2 style="text-align: left; margin-bottom: 20px;">How Many Ticket ?</h2>
+            <form style="text-align: left; padding-bottom: 30px;">
+                <input style="text-align: left; width: 30%;" type="number" id="myNumber" value="1" onchange="calc()">
+            </form>
+
+            <div style="text-align: left; padding-top: 20px; padding-bottom: 20px;">
+                <a style="font-size: 14pt;">Total : </a>
+                <a id="results">Rp. 1.000.000</a>
+
+                <!-- <button type="button" onclick="conti()">Continue</button> -->
+                <a href="payment.html" class="btn btn-dark" style="float: right;" onclick="conti()">Continue</a>
+                <!-- <button cl>Continue</button> -->
+            </div>
+            
+        </div>
+
+        <!-- <input type="button" id="calc" value="Calculate" onclick="calc()"> -->
+        <script type="text/javascript">
+        "use strict"
+        function calc() {
+        var ele = document.getElementsByName('gender');       
+        var type;
+
+        for(var i = 0; i < ele.length; i++) { 
+            if(ele[i].checked) 
+            type = ele[i].value; 
+        }
+
+        var startduit = 1;
+        if(type == 'Bronze'){
+            startduit = 1000000;
+        }else if(type == 'Silver'){
+            startduit = 1500000;
+        }else if(type == 'Gold'){
+            startduit = 1750000;
+        }else{
+            startduit = 2500000;
+        }
+
+        var banyak =  document.getElementById("myNumber").value;
+        if(banyak <1){
+            alert('Ticket Must At Least 1!');
+            document.getElementById("myNumber").value = 1;
+            banyak = 1;
+        }else if(banyak>5){
+            alert('You Only Can Buy 5 Tickets Per Transaction');
+            document.getElementById("myNumber").value = 1;
+            banyak = 1;
+        }
+        var price = 1;
+        price = banyak * startduit;
+
+
+
+        // alert('Harga value :' +price+'type : '+type +'duit : '+startduit);
+        var sisa;
+        var ribuan;
+        var separator;
+
+        var number_string = price.toString(),
+            sisa    = number_string.length % 3,
+            rupiah  = number_string.substr(0, sisa),
+            ribuan  = number_string.substr(sisa).match(/\d{3}/g);
+                
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+        rupiah = 'Rp. ' + rupiah;
+
+        document.getElementById('results').innerHTML = rupiah;
+        var getInput = rupiah;
+        localStorage.setItem("storageName",getInput);
+
+        }
+
+        function conti() {
+            alert('Your Total Transaction : ' +localStorage.getItem("storageName") );
+        }
+        </script>
+
+    </div>
+    
+    <div id="copyright" style="background-color: #343a40; color: white; margin-top: 30px; margin-bottom: 0;">
+        <h5 style="text-decoration: bold; margin: 0; font-size: 15pt;">©Copyright 2019 Djakarta Warehouse Project, All Right Reserved.</h5>
+        <h5 style="margin: 0; font-size: 15pt;">Develop with ❤ Djakarta Warehouse Project</h5>
+    </div>
+</body>
+</html>

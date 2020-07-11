@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DWP</title>
+	<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap-grid.css">
+    <style type="text/css">
+    @font-face {
+        font-family: "Anton";
+        src: url("resource/font/Anton.ttf");
+    }
+    @font-face {
+        font-family: "Montserrat";
+        src: url("resource/font/montserrat.ttf");
+    }
+    
+    </style>
+
+	<link rel="stylesheet" type="text/css" href="resource/css/home.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/thanks.css">
+
+    <script src="resource/bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="resource/bootstrap/js/bootstrap.js"></script>
+    <script src="resource/bootstrap/js/popper.min.js"></script>
+    <!-- <script src="resource/js/home.js"></script> -->
+    <script src="resource/js/write.js"></script>
+
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+	<script src="resource/js/aos.js"></script>
+
+    <style type="text/css">
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+	.nav-item::after{content:'';display:block;width:0px;height:2px;background:#fec400;transition: 0.2s;}
+	.nav-item:hover::after{width:100%;}
+	.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+	
+	.dropdown-item.active, .dropdown-item:active{color:#212529;}
+	.dropdown-item:focus, .dropdown-item:hover{background:#fec400;}
+	.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+    </style>
+
+</head>
+<body style="background-color: black;">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #343a40/*#355C7D*/;font-family: 'Montserrat', sans-serif;">
+        <a class="navbar-brand w3-animate-zoom" href="#">
+            <img style="width: 80px;" src="resource/img/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="button pulse nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#line-up">Line Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#teaser">Teaser</a>
+                </li>
+                 <li class="nav-item active">
+                    <a class="nav-link" href="index.html#ticket">Buy Now</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="_blank">Contact Us</a>
+                </li>
+                <li class="nav-link typewrite" style="color: white; position: relative; float: right;" data-period="2500" data-type='[ "DWP", "Djakarta Warehouse Project", "I Love to Develop." ]'>
+    			<span class="wrap"></span>
+  				</li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="pay-tabs">
+        <div class="payment-info" style="font-family: 'Anton', sans-serif; font-weight: bold; background-color: #343A40;margin-top: 50px; margin-right: 20%; margin-left: 20%;">
+            <h2 style="font-family: 'Anton', sans-serif; color:white;">Thanks For Your Purchases</h2><br>
+            <h3 style="font-family: 'Anton', sans-serif; color:white;">Your Purchases ID : <h2 id="purchaseid" style="margin-top: 4%; margin-bottom: 4%; color: #FEC400; letter-spacing: 1px;">-</h2></h3>
+            <h3 style="color:white;">Your Ticket ID will be Sent to your Email Or Phone Number</h3><br><br>
+            <h5 style="color:white;">For more information, you can contact us 
+                <a href="about.html" target="_blank">here</a>
+            </h5>
+            <h3 style="color:white;"><a style="color: red">❤</a> See you soon at dwp 2020 <a style="color: red">❤</a></h3>
+        </div>
+    </div>
+
+    <div id="copyright" style="background-color: #343a40; font-family: 'Montserrat', sans-serif; font-weight: bold; color: white; margin-top: 30px; margin-bottom: 0;">
+        <h5 style="text-decoration: bold; margin: 0; font-size: 15pt;">©Copyright 2019 Djakarta Warehouse Project, All Right Reserved.</h5>
+        <h5 style="margin: 0; font-size: 15pt;">Develop with ❤ Djakarta Warehouse Project</h5>
+    </div>
+
+    <script type="text/javascript">
+        function makeid(length) {
+            var result           = '';
+           var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+           var charactersLength = characters.length;
+           for ( var i = 0; i < length; i++ ) {
+              result += characters.charAt(Math.floor(Math.random() * charactersLength));
+           }
+           return result;
+        }
+        window.onload = document.getElementById('purchaseid').innerHTML = makeid(20);
+    </script>
+</body>
+
+</html>

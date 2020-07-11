@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DWP</title>
+	<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap-grid.css">
+	<style type="text/css">
+    @font-face {
+        font-family: "Anton";
+        src: url("resource/font/Anton.ttf");
+    }
+    @font-face {
+        font-family: "Montserrat";
+        src: url("resource/font/montserrat.ttf");
+    }
+    </style>
+	<!-- <link rel="stylesheet" type="text/css" href="resource/font/montserrat.ttf">
+	<link rel="stylesheet" type="text/css" href="resource/font/anton.ttf"> -->
+	<link rel="stylesheet" type="text/css" href="resource/css/home.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/thanks.css">
+
+    <script src="resource/bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="resource/bootstrap/js/bootstrap.js"></script>
+    <script src="resource/bootstrap/js/popper.min.js"></script>
+    <!-- <script src="resource/js/home.js"></script> -->
+    <script src="resource/js/write.js"></script>
+	<script src="resource/js/aos.js"></script>
+
+    <style type="text/css">
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+	.nav-item::after{content:'';display:block;width:0px;height:2px;background:#fec400;transition: 0.2s;}
+	.nav-item:hover::after{width:100%;}
+	.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+	
+	.dropdown-item.active, .dropdown-item:active{color:#212529;}
+	.dropdown-item:focus, .dropdown-item:hover{background:#fec400;}
+	.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+    </style>
+    <style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Style inputs */
+	input[type=text], select, textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+	}
+
+	input[type=submit] {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 12px 20px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+
+	/* Style the container/contact section */
+	.container {
+	  border-radius: 5px;
+	  background-color: #f2f2f2;
+	  padding: 10px;
+	}
+
+	/* Create two columns that float next to eachother */
+	.column {
+	  float: left;
+	  width: 50%;
+	  margin-top: 6px;
+	  padding: 20px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .column, input[type=submit] {
+	    width: 100%;
+	    margin-top: 0;
+	  }
+	}
+
+	.btn:hover{
+		color: #fec400;
+	}
+	</style>
+</head>
+<body style="background-color: black;">
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #343a40/*#355C7D*/;">
+        <a class="navbar-brand w3-animate-zoom" href="#">
+            <img style="width: 80px;" src="resource/img/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="button pulse nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#line-up">Line Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#teaser">Teaser</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="index.html#ticket">Buy Now</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">Contact Us</a>
+                </li>
+                <li class="nav-link typewrite" style="color: white; position: relative; float: right;" data-period="2500" data-type='[ "DWP", "Djakarta Warehouse Project", "I Love to Develop." ]'>
+    			<span class="wrap"></span>
+  				</li>
+            </ul>
+        </div>
+    </nav>
+
+	<div class="container">
+	  <div style="text-align:center">
+	    <h2>Contact Us</h2>
+	    <p>If you have any questions, please leave us a message: </p>
+	  </div>
+	  <div class="row">
+	    <div class="column">
+	      <img src="resource/img/logo2.png" style="width:100%">
+	    </div>
+	    <div class="column">
+	      <form name="myForm" action="/action_page.php">
+	        <label for="fname">First Name</label>
+	        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+	        <label for="lname">Last Name</label>
+	        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+	        <label for="lname">Your Email</label>
+	        <input type="text" id="email" name="email" placeholder="Your Email...">
+	   		<label for="lname">Telephone</label>
+	        <input type="text" id="tel" name="tel" placeholder="Your Telephone Number...">
+	        <label for="subject">Subject</label>	
+	        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+	        <a class="btn btn-dark" href="#" onclick="getdata()">
+	        	Submit
+	        </a>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	<script type="text/javascript">
+		function getdata(){
+			var oke = false;
+			var firstname = document.forms["myForm"]["firstname"].value;
+			var lastname = document.forms["myForm"]["lastname"].value;
+			var email = document.forms["myForm"]["email"].value;
+			var tel = document.forms["myForm"]["tel"].value;
+			var subject = document.forms["myForm"]["subject"].value;
+			if (firstname == "") {
+				alert("FirstName must be filled out");
+			    return;
+			}else{
+				if (lastname == "") {
+					alert("LastName must be filled out");
+				    return;
+				}else{
+					if (email == "") {
+						alert("Email must be filled out");
+					    return;
+					}else{
+						if (tel == "") {
+							alert("Telephone must be filled out");
+						    return;
+						}else{
+							if (subject == "") {
+								alert("Subject must be filled out");
+							    return;
+							}else{
+								oke = true;
+							}
+						}
+					}
+				}
+			}
+
+			if(oke == true){
+				alert('Thank You for message, we will reach you out soon!');
+				window.location.href = 'about.html';
+			}
+
+		}
+	</script>
+</body>
+
+</html>

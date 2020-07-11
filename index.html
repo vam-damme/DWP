@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DWP</title>
+	<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="resource/bootstrap/css/bootstrap-grid.css">
+	<!-- <link rel="stylesheet" type="text/css" href="resource/font/montserrat.ttf"> -->
+    <style type="text/css">
+    @font-face {
+        font-family: "Anton";
+        src: url("resource/font/Anton.ttf");
+    }    
+    </style>
+	<link rel="stylesheet" type="text/css" href="resource/css/home.css">
+    <link rel="stylesheet" type="text/css" href="resource/css/slide.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
+    <script src="resource/bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="resource/bootstrap/js/bootstrap.js"></script>
+    <script src="resource/bootstrap/js/popper.min.js"></script>
+    <script src="resource/js/home.js"></script>
+    <script src="resource/js/write.js"></script>
+
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+	<script src="resource/js/aos.js"></script>
+
+    <style type="text/css">
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+	.nav-item::after{content:'';display:block;width:0px;height:2px;background:#fec400;transition: 0.2s;}
+	.nav-item:hover::after{width:100%;}
+	.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:#fec400;}
+	
+	.dropdown-item.active, .dropdown-item:active{color:#212529;}
+	.dropdown-item:focus, .dropdown-item:hover{background:#fec400;}
+	.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+    </style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #343a40/*#355C7D*/;">
+        <a class="navbar-brand w3-animate-zoom" href="#">
+            <img style="width: 80px;" src="resource/img/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="button pulse nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#line-up">Line Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#teaser">Teaser</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#ticket">Buy Now</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Contact Us</a>
+                </li>
+                <li class="nav-link typewrite" style="color: white; position: relative; float: right;" data-period="2500" data-type='[ "DWP", "Djakarta Warehouse Project", "I Love to Develop." ]'>
+    			<span class="wrap"></span>
+  				</li>
+            </ul>
+        </div>
+    </nav>
+
+
+	<div id="demo" style="background: black; padding-bottom: 50px;">
+        <div id="clockdiv" data-aos="fade-right" data-aos-duration="1000">
+            <div>
+                <p id="week" class="text"></p>
+                <div class="smalltext">Weeks</div>
+            </div>
+            <div>
+                <p id="day" class="text"></p>
+                <div class="smalltext">Days</div>
+            </div>
+            <div>
+                <p id="jam" class="text"></p>
+                <div class="smalltext">Hours</div>
+            </div>
+            <div>
+                <p id="menit" class="text"></p>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+                <p id="detik" class="text"></p>
+                <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-left: 10%; padding-right: 10%;">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="resource/img/1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>...</h5>
+                        <p>...</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="resource/img/4.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>...</h5>
+                        <p>...</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="resource/img/3.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>...</h5>
+                        <p>...</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="resource/img/2.jpg" alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>...</h5>
+                        <p>...</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="resource/img/6.jpeg" alt="Fifth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>...</h5>
+                        <p>...</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="line-up" class="parallax" style="padding-top: 20px; padding-bottom: 5%; background-image: url(resource/img/2.jpg);">
+        <div id="judul-line-up text-judul container" data-aos="fade-right" data-aos-duration="2000">
+            <h1 class="text-judul">LINE UP</h1>
+            <div class="row atas" style="vertical-align: middle;">
+                <div class="col" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="https://en.m.wikipedia.org/wiki/Calvin_Harris" target="_blank">
+                        <input type="image" src="resource/img/calvin.jpg">
+                        <p class="tulisan-line-up">CALVIN HARRIS</p>
+                    </a>
+                </div>
+                <div class="col" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="https://en.m.wikipedia.org/wiki/Skrillex" target="_blank">
+                        <input type="image" src="resource/img/skril.jpg">
+                        <p class="tulisan-line-up">SKRILLEX</p>
+                    </a>
+                </div>
+                <div class="col" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="https://en.m.wikipedia.org/wiki/Zedd" target="_blank">
+                        <input type="image" src="resource/img/zedd.jpg">
+                        <p class="tulisan-line-up">ZEDD</p>
+                    </a>
+                </div> 
+                <div class="col" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="https://en.m.wikipedia.org/wiki/Martin_Garrix" target="_blank">
+                        <input type="image" src="resource/img/martin.jpg">
+                        <p class="tulisan-line-up">MARTIN GARRIX</p>
+                    </a>
+                </div>
+                <!-- <span id="dots">.</span> -->
+            </div>
+            <!-- <span id="more"> -->
+            <div class="row atas">
+                <div class="col" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="https://en.m.wikipedia.org/wiki/Jonas_Blue" target="_blank">
+                        <input type="image" src="resource/img/jonas.jpg">
+                        <p class="tulisan-line-up">Jonas Blue</p>
+                    </a>
+                </div>
+                <div class="col" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="https://en.m.wikipedia.org/wiki/Krewella" target="_blank">
+                        <input type="image" src="resource/img/krewella.jpg">
+                        <p class="tulisan-line-up">Krewella</p>
+                    </a>
+                </div>
+                <div class="col" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="https://en.m.wikipedia.org/wiki/Blasterjaxx" target="_blank">
+                        <input type="image" src="resource/img/blaster.jpg">
+                        <p class="tulisan-line-up">Blasterjaxx</p>
+                    </a>
+                </div> 
+                <div class="col" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="https://en.m.wikipedia.org/wiki/Markus_Schulz" target="_blank">
+                        <input type="image" src="resource/img/markus.jpg">
+                        <p class="tulisan-line-up">Markus Schulz</p>
+                    </a>
+                </div>
+            </div>
+            <!-- </span> -->
+            <!-- <button class="button-read-more" onclick="myFunction()" id="readmore" data-aos="fade-right" data-aos-duration="2000">More</button> -->
+
+            </div>
+        </div>
+    </div>
+
+    <div id="teaser" style="padding-top: 1%; padding-bottom: 5%;background-color: black;">
+        <div id="judul-teaser">
+            <h1 class="text-judul" data-aos="fade-right" data-aos-duration="2000">TEASER</h1>
+            <video width="75%" controls data-aos="fade-right" data-aos-duration="2000">
+                <source src="resource/video/dwp.webm" type="video/webm">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <div>
+        <img onclick="topFunction()" id="myBtn" style="width: 8%; height: auto;" src="resource/img/up-white.png">
+    </div>
+    <div id="ticket" class="parallax" style="padding-top: 20px; padding-bottom: 5%; min-height: 20%; display: inline-block; background-image: url(resource/img/back.jpeg);">
+        <div id="judul-ticket text-judul">
+            <h1 class="text-judul" data-aos="fade-right" data-aos-duration="2000">TICKET</h1>
+            <div class="row atas" style="vertical-align: middle;">
+                <div class="col tiket-gambar" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="ticket.html" target="_blank">
+                        <input type="image" src="resource/img/bronze.png" style="max-width: 100%; max-height: 100%;">
+                        <p class="tulisan-line-up">Rp. 1.000.000</p>
+                    </a>
+                </div>
+                <div class="col tiket-gambar" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="ticket.html" target="_blank">
+                        <input type="image" src="resource/img/silver.png" style="max-width: 100%; max-height: 100%;">
+                        <p class="tulisan-line-up">Rp. 1.500.000</p>
+                    </a>
+                </div>
+                <div class="col tiket-gambar" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="ticket.html" target="_blank">
+                        <input type="image" src="resource/img/gold.png" style="max-width: 100%; max-height: 100%;">
+                        <p class="tulisan-line-up">Rp. 1.750.000</p>
+                    </a>
+                </div> 
+                <div class="col tiket-gambar" data-aos="fade-right" data-aos-duration="2000" style="margin-top: 20px;">
+                    <a href="ticket.html" target="_blank">
+                        <input type="image" src="resource/img/diamond.png" style="max-width: 100%; max-height: 100%;">
+                        <p class="tulisan-line-up">Rp. 2.500.000</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sponsor" style="padding-top: 0; background-color: black;">
+        <div id="judul-sponsor" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="text-judul">OUR PARTNER</h1>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <img src="resource/img/bca.png" class="img-part">
+                <img src="resource/img/bni.png" class="img-part">
+                <img src="resource/img/mandiri.png" class="img-part">
+                <img src="resource/img/mega.png" class="img-part">
+            </div>
+            <div style="padding-bottom: 20px;" data-aos="fade-right" data-aos-duration="1000">
+                <img src="resource/img/dana.png"class="img-part"> 
+                <img src="resource/img/grab.png"class="img-part">
+                <img src="resource/img/ovo.png" class="img-part">
+                <img src="resource/img/sinarmas.png" class="img-part">
+                <img src="resource/img/tokopedia.png" class="img-part">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="copyright" style="background-color: #343a40; color: white">
+        <h5 style="text-decoration: bold; margin: 0; font-size: 1.5vw;">©Copyright 2019 Djakarta Warehouse Project, All Right Reserved.</h5>
+        <h5 style="margin: 0; font-size: 1.5vw;">Develop with ❤ Djakarta Warehouse Project</h5>
+    </div>
+
+    <script>   
+       AOS.init(); 
+    </script>
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() { scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
+
+
+</html>
